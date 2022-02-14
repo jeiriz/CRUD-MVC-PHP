@@ -1,6 +1,6 @@
 <?php
-require_once 'controllers/CProducto.php';
-$objProducto = new CProducto();
+require_once 'controllers/guitarra.php';
+$objProducto = new GuitarraController();
 $op="mostrar";
 if(isset($_REQUEST['op']))
 $op = $_REQUEST['op'];

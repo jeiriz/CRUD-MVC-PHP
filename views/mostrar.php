@@ -28,11 +28,10 @@
          foreach($value as $va){ ?>
            <tr>
               <td><?php echo $va['id'] ;?></td>
-              <td><?php echo $va['nombre'] ;?></td>
+              <td><?php echo $va['marca'] ;?></td>
               <td><?php echo $va['precio'] ;?></td>
-              <td><a class="btn btn-info" href="index.php?op=editar&id=<?php echo $va['id'] ;?>">Actualizar</a>
+              <td>
               <a class="btn btn-danger" onclick="return confirm('Esta seguro de eliminar el registro?')"  href="index.php?op=eliminar&id=<?php echo $va['id'] ;?>">Eliminar</a>
-              <a class="btn btn-primary" href="producto/editar/<?php echo $va['id'] ;?>/<?php echo $va['slug'] ;?>">Actualizar</a>
               </td>
         
            </tr>
